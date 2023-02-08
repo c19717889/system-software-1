@@ -9,7 +9,7 @@
 char *getWord(int maxsize)
 {
   char *s;
-//   s = calloc(sizeof(char), maxsize);
+  s = calloc(sizeof(char), maxsize);
   printf("enter a string (max %d chars): ", maxsize);
   scanf("%s", s);
   return s;
