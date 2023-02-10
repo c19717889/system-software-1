@@ -6,6 +6,7 @@ int main(int argc, char **argv)
     printf("Start\n");
     //fork();
     pid_t pid = fork();
+    // pid_t pid = getpid();
 
     printf("\nMy PID is: %d", pid);
 
