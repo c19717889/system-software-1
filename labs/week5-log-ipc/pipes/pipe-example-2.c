@@ -52,6 +52,7 @@ void exec1() {
 }
 
 void exec2() {
+  //both zeros translates to read..
   // input from pipe
   dup2(pipefd[0], 0);
   // output to stdout - default

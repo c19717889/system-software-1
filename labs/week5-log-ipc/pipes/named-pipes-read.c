@@ -16,6 +16,7 @@ int main()
 
     // Creating the named file(FIFO)
     // mkfifo(<pathname>,<permission>)
+    //fifo file is like a database
     mkfifo(myfifo, 0666);
 
     char str1[80], str2[80];
