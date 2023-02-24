@@ -3,6 +3,8 @@
 #include <string.h>
 #include <mqueue.h>
 
+//publisher - subscriber pattern
+
 int main()
 {
     mqd_t mq;
