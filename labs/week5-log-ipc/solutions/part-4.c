@@ -2,16 +2,19 @@
 #include <unistd.h>
 #include <stdio.h>
 
-void exec_ls();
-void exec_grep();
+//commands for the pipes
+void exec_ls(); //execute ls command
+void exec_grep(); //
 void exec_output_to_stdout();
+
+//a pipe creates an input and an output
 
 int pid;
 int pipe1[2];
 int pipe2[2];
 
 void main() {
-  // ps aux | awk { print $1 } | sort -u	
+  // ls -la | awk { print $1 } | sort -u	
 
   // create pipe1
   if (pipe(pipe1) == -1) {
