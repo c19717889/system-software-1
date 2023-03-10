@@ -34,7 +34,7 @@ int main()
     backup_time = *localtime(&now);
     backup_time.tm_hour = 1; 
     backup_time.tm_min = 0; 
-    backup_time.tm_sec = 0;
+    backup_time.tm_sec = 00;
 
     // Implementation for Singleton Pattern if desired (Only one instance running)
 
@@ -117,7 +117,7 @@ int main()
 		time(&now);
 		double seconds_to_transfer = difftime(now, mktime(&backup_time));
 		//syslog(LOG_INFO, "%.f seconds until backup", seconds_to_files_check);
-		if(seconds_to_transfer == 0) {
+		// if(seconds_to_transfer == 0) {
 			lock_directories();
 			collect_reports();	  
 			backup_dashboard();
@@ -126,7 +126,7 @@ int main()
 			generate_reports();
 			//after actions are finished, start counting to next day
 			update_timer(&backup_time);
-		}	
+		// }	
 	  }
 	}	
 	closelog();
