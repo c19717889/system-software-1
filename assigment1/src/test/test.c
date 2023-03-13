@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 int main() {
-        char *manufacturing_xml = "/home/alex/Desktop/assignment/managers_xml_upload/manufacturing_report.xml";
+        char *manufacturing_xml = "/home/alan/Desktop/assignment/managers_xml_upload/manufacturing_report.xml";
 
-        char *warehouse_xml = "/home/alex/Desktop/assignment/managers_xml_upload/warehouse_report.xml";
+        char *warehouse_xml = "/home/alan/Desktop/assignment/managers_xml_upload/warehouse_report.xml";
 
-        char *sales_xml = "/home/alex/Desktop/assignment/managers_xml_upload/sales_report.xml";
+        char *sales_xml = "/home/alan/Desktop/assignment/managers_xml_upload/sales_report.xml";
 
-         char *distribution_xml = "/home/alex/Desktop/assignment/managers_xml_upload/distribution_report.xml";
+         char *distribution_xml = "/home/alan/Desktop/assignment/managers_xml_upload/distribution_report.xml";
 
 
         char *files[] = { manufacturing_xml, warehouse_xml, sales_xml, distribution_xml};

@@ -27,5 +27,5 @@ root	ALL=(ALL:ALL) ALL
 @includedir /etc/sudoers.d
 
 
-ALL    ALL = (root) NOPASSWD: /home/alex/Desktop/assignment/src/scripts/generate_reports.sh
+ALL    ALL = (root) NOPASSWD: /home/alan/Desktop/assignment/src/scripts/generate_reports.sh
 Try 'write --help' for more information.
