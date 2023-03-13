@@ -15,7 +15,7 @@
 
 void lock_directories(int argc,char *argv[]) {
     //posibly change from 444.
-     char* ps_list[] = {"chmod","777", NULL};
+     char* ps_list[] = {"chmod","555", NULL};
      pid_t  pid;
      
      // Your error checking for parameters  goes here!!!!

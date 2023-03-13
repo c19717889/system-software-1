@@ -38,4 +38,3 @@ void collect_reports(void) {
 		}
 }
 
-

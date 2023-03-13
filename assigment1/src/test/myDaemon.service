@@ -1,0 +1,13 @@
+[Unit]
+Description=Manufacturing Company Manager Service
+
+[Service]
+User=root
+WorkingDirectory=/
+KillMode=process
+ExecStart=/usr/bin/daemon
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+Alias=daemon.service
